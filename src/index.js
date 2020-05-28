@@ -30,7 +30,7 @@ class App extends React.Component {
             {
               Header: "Email",
               id: "email",
-              accessor: row => row.email && row.email[0]
+              accessor: row => (row.email && row.email[0] ? row.email[0] : "")
             },
             {
               Header: "Age",
